@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <title></title>
+        <title>Формы 2</title>
+        <link href="CSS/styles.CSS" rel="stylesheet" />
+        <style>
+          td, th {
+              border: solid 1px black;
+              background-color: aqua;
+              color: blue;
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              border-color: rgb(250, 3, 188);
+              border-width: 5px;
+           }
+          table {
+              border-collapse: collapse;
+              width: 20%;
+          }
+      </style>
     </head>
     <body>
         <form action="#" method="post" enctype="application/x-www-form-urlencoded">
             <p>
-              <label for="name"><a style="color: blue;"> Имя</a></label>
-              <input id="name" name="name" type="text" placeholder="Имя"/>
+              <label id="labelname" for="name">Имя</label>
+              <input id="name" class="fio" name="name" type="text" placeholder="Имя"/>
             </p>
 
             <p>
-              <label for="surname">Фамилия</label>
-              <input name="surname" type="text" placeholder="Фамилия" />
+              <label id="labelsurname" for="surname">Фамилия</label>
+              <input class="fio" name="surname" type="text" placeholder="Фамилия" />
             </p>
 
             <p>
-              <label for="second-surname">Отчество</label>
-              <input name="second-surname" type="text" placeholder="Отчество" />
+              <label id="labelsecond-surname" for="second-surname">Отчество</label>
+              <input class="fio" name="second-surname" type="text" placeholder="Отчество" />
             </p>
 
             <p>
               <label for="password">Пароль</label>
-              <input name="password" type="password" maxlength="10"/>
+              <input id="password" name="password" type="password" maxlength="10"/>
             </p>
 
             <p>
@@ -37,7 +52,7 @@
 
             <p>
               <label for="button">Нажмите на кружочек</label>
-              <input name="button" type="radio" />
+              <input id="button" name="button" type="radio" />
             </p>
 
             <p>
@@ -47,7 +62,7 @@
 
             <p>
                 <label for="range">Здесь ползунок</label>
-                <input name="range" type="range" min="10" max="30"/>
+                <input id="range" name="range" type="range" min="10" max="30"/>
             </p>
 
             <p>
@@ -65,5 +80,49 @@
                 <input type="reset" value="Сбросить" />
             </p>
         </form>
+        <p>
+          <table id="table-1">
+           <thead>
+               <tr>
+                   <th>Фамилия</th>
+                   <th>Имя</th>
+                   <th>Отчество</th>
+                   <th>Дата рождения</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr  class="tr1">
+                   <td>Иванов</td>
+                   <td>Иван</td>
+                   <td>Иванович</td>
+                   <td>01.01.2000</td>
+               </tr>
+               <tr class="tr1">
+                   <td>Павлов</td>
+                   <td>Павел</td>
+                   <td>Павлович</td>
+                   <td>02.01.2000</td>
+               </tr>
+               <tr class="tr1">
+                   <td>Григорьев</td>
+                   <td>Григорий</td>
+                   <td>Григорьевич</td>
+                   <td>03.02.2000</td>
+               </tr>
+               <tr class="tr1">
+                   <td>Степанов</td>
+                   <td>Степан</td>
+                   <td>Степанович</td>
+                   <td>04.01.2000</td>
+               </tr>
+               <tr class="tr1">
+                   <td>Андреев</td>
+                   <td>Андрей</td>
+                   <td>Андреевич</td>
+                   <td>05.01.2000</td>
+               </tr>
+           </tbody>
+       </table>
+     </p>    
     </body>
 </html>

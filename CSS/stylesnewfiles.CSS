@@ -1,0 +1,28 @@
+#header-1 {
+    font-size: 30px;
+    font-style: italic;
+    margin-left: 40%;
+}
+
+#main-1 {
+    margin-top: 70px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+#footer-1 {
+    font-style: italic;
+    font-size: 30px;
+    margin-top: 15%;
+}
+
+.img-1 {
+    height: 300px;
+    width: 400px;
+    margin: 50px;
+}
+
+.containerss {
+    font-style: italic;
+    font-size: larger;
+}
