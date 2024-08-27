@@ -1,49 +1,121 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <title></title>
+        <title>Главная страница</title>
         <link href="CSS/stylestable.CSS" rel="stylesheets"/>
+        <style>
+            td, th {
+    border: solid 1px rgb(247, 3, 3);
+    background-color: rgb(6, 250, 26);
+    color: rgb(250, 6, 6);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-color: rgb(250, 3, 188);
+    border-width: 1px;
+   
+}
+  table{
+    border-collapse: collapse;
+  }
+  input{
+    background-color: aqua;
+  }
+        </style>
     </head>
     <body>
-        <table>
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+            <p>
+              <label for="login">Логин:</label>
+              <input id="login" name="login" type="text" placeholder="Логин" maxlength="5" autofocus/>
+            </p>
+      
+            <p>
+              <label for="password">Пароль:</label>
+              <input id="password" name="password" type="password" placeholder="Пароль"/>
+            </p>
+      
+            <p>
+              <label for="phone">Телефон:</label>
+              <input name="phone" type="tel" value="123456789"/>
+            </p>
+      
+            <p>
+              <label for="age">Возраст:</label>
+              <input name="age" type="number" min="12" max="120" step="2"/>
+            </p>
+      
+            <p>
+              <label for="rbutton">Радио-кнопка:</label>
+              <input name="rbutton" type="radio"/>
+            </p>
+      
+      
+            <p>
+              <label for="chbox">Чекбокс 1:</label>
+              <input name="chbox" type="checkbox"/>
+            </p>
+      
+            <p>
+            <label for="chbox2">Чекбокс 2:</label>
+            <input name="chbox2" type="checkbox" checked/>
+            </p>
+      
+            <p>
+              <label for="color">Цвет:</label>
+              <input name="color" type="color"/>
+            </p>
+      
+            <p>
+              <label for="file">Файл:</label>
+              <input name="file" type="file">
+            </p>
+      
+            <p>
+              <label for="range">Ползунок:</label>
+              <input name="range" type="range" min="1" max="10" step="1"/>
+            </p>
+      
+              <input type="submit" value="Войти"/>
+              <input type="reset" value="Сбросить"/>
+           </form>
+        <table id="table-2">
             <thead>
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
+                <tr class="tr2">
+                    <th>Имя</th>
+                    <th>Год рождения</th>
+                    <th>СНИЛС</th>
+                    <th>Место жительства</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                <tr class="tr2">
+                    <td>Антон</td>
+                    <td>1990</td>
+                    <td>12234324</td>
+                    <td>Новосибирск</td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                <tr class="tr2">
+                    <td>Иван</td>
+                    <td>1997</td>
+                    <td>1231242345345</td>
+                    <td>Санкт-Петербург</td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                <tr class="tr2">
+                    <td>Семён</td>
+                    <td>1996</td>
+                    <td>1231241234123</td>
+                    <td>Минск</td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                <tr class="tr2">
+                    <td>Игорь</td>
+                    <td>1999</td>
+                    <td>678678678</td>
+                    <td>Москва</td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                <tr class="tr2">
+                    <td>Олег</td>
+                    <td>2000</td>
+                    <td>908870</td>
+                    <td>Киев</td>
                 </tr>
             </tbody>
         </table>
